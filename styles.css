@@ -56,6 +56,10 @@ textarea {
   cursor: pointer;
 }
 
+.btn:hover {
+  filter: brightness(115%);
+}
+
 .submit-btn {
   display: block;
   width: 100%;
