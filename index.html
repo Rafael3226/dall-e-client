@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="container">
+    <main>
+      <h1>Image Generator</h1>
+    </main>
+    <section>
+      <div class="form-group">
+        <label for="api-key">API Key:</label>
+        <div class="row">
+          <input
+            type="password"
+            id="api-key"
+            placeholder="Enter your API key"
+            class="input api-key"
+          />
+          <div>
+            <button id="save-key-btn" class="btn key-btn">Save</button>
+            <button id="clear-key-btn" class="btn key-btn clear-key" disabled>
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="prompt">Prompt:</label>
+        <textarea
+          id="prompt"
+          rows="5"
+          placeholder="Enter a prompt"
+          class="input"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="prompt">Size:</label>
+        <select id="size" rows="5" placeholder="Select a size" class="input">
+          <option value="256x256">256 x 256</option>
+          <option value="512x512">512 x 512</option>
+          <option value="1024x1024">1024 x 1024</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn submit-btn" id="submit-btn">Generate Image</button>
+      </div>
+    </section>
+    <section class="image-section">
+      <img id="generated-image" src="" alt="generated image" />
+    </section>
+
+    <!-- JavaScript code can be placed here to handle the functionality -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.5/js.cookie.min.js"
+      integrity="sha512-nlp9/l96/EpjYBx7EP7pGASVXNe80hGhYAUrjeXnu/fyF5Py0/RXav4BBNs7n5Hx1WFhOEOWSAVjGeC3oKxDVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js" async defer></script>
+  </body>
+</html>
