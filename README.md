@@ -6,19 +6,16 @@ This project is a Python client for the DALL-E API. DALL-E is a machine learning
 
 1. Make sure you have Python 3.x installed on your computer.
 2. Clone this repository using the following command:
-    
-    ```
-    git clone <https://github.com/your-username/dalle-client.git>
-    
-    ```
-    
+
+   ```
+   git clone <https://github.com/your-username/dalle-client.git>
+   ```
+
 3. Install the required dependencies by running the following command:
-    
-    ```
-    pip install -r requirements.txt
-    
-    ```
-    
+
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
